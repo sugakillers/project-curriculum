@@ -1,0 +1,29 @@
+.social-media-section {
+  background-color: #FFF4FB;
+}
+
+.social-media-container {
+  margin-top: 280px;
+
+}
+.social-media-list {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .social-media-container {
+    margin-top: 344px;
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .social-media-container {
+    margin-top: 308px;
+
+  }
+}
