@@ -34,18 +34,13 @@
 .footer-form-container {
   margin-top: 40px;
 }
-.footer-form {
-}
-.form-container {
-}
+
 .form-contact {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.form-email-container {
 
-}
 .form-email {
   background-color: #FFF4FB;
   border: none;
@@ -70,8 +65,7 @@
   display: none;
   margin-top: 8px;
 }
-.form-comment-container {
-}
+
 .form-comment {
   background-color: #FFF4FB;
   border: none;
@@ -143,13 +137,7 @@
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-.footer-backdrop {
-}
 
-.modal-button {
-}
-.modal-img:hover {
-}
 .modal-text {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -207,9 +195,7 @@
   .footer-form-container {
     margin-top: 60px;
   }
-  .form-email-container {
 
-  }
   .form-button {
   padding-right: 24px;
   padding-left: 24px;
@@ -242,32 +228,10 @@
   .footer-title {
     max-width: 600px;
   }
-  .footer-title-span {
-  }
+
   .footer-form-container {
     margin: 0;
     width: 100%;
-  }
-  .footer-form {
-  }
-  .form-container {
-
-  }
-  .form-contact {
-  }
-  .form-email-container {
-  }
-  .form-email {
-  }
-  .email-success-message {
-  }
-  .email-error-message {
-  }
-  .form-comment-container {
-  }
-  .form-comment {
-  }
-  .form-button {
   }
 
 }

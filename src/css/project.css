@@ -100,19 +100,13 @@ flex-direction: column;
   .project-section {
     margin-top: 96px;
   }
-  .project-container {
-  }
-  .container {
-  }
-  .project-header {
-  }
+
   .project-list {
     gap: 60px;
     display: flex;
     align-items: flex-start;
   }
-  .project-item {
-  }
+
   .project-img {
     border-radius: 24px;
   }
@@ -122,10 +116,7 @@ flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
   }
-  .project-text {
-  }
-  .project-skills {
-  }
+
   .project-name {
     font-size: 36px;
   }
@@ -133,10 +124,7 @@ flex-direction: column;
     margin: 0;
     white-space: nowrap;
   }
-  .project-link-text {
-  }
-  .project-link-icon {
-  }
+
 .project-button {
   margin: 0;
 }
@@ -156,24 +144,6 @@ flex-direction: column;
     max-width: 1312px;
 
 
-  }
-  .container {
-  }
-  .project-header {
-  }
-  .project-list {
-  }
-
-
-  .project-skills {
-  }
-  .project-name {
-  }
-  .project-link {
-  }
-  .project-link-text {
-  }
-  .project-link-icon {
   }
 
 }
