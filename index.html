@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Kamila Goncharenko</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="/project-curriculum/assets/icons-DVMYpc6F.svg" />
-  <link rel="stylesheet" crossorigin href="/project-curriculum/assets/index-BN1FNpr-.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  <link rel="icon" type="image/svg+xml" href="/project-curriculum/assets/icons-DrLvtf1b.svg" />
+  <script type="module" crossorigin src="/project-curriculum/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/project-curriculum/assets/vendor-BprhKTE7.js">
+  <link rel="stylesheet" crossorigin href="/project-curriculum/assets/vendor-D_nxXpU-.css">
+  <link rel="stylesheet" crossorigin href="/project-curriculum/assets/index-CewFaq-X.css">
 </head>
 <body>
 <main>
@@ -31,12 +38,33 @@
     </nav>
     <button class="header-mobile-open-btn" type="button">
       <svg class="header-mobile-open-btn-icon" width="32" height="32">
-        <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-menu"></use>
+        <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
 </header>
 
+<!-- MOBILE MENU  -->
+<div class="mobile-backdrop">
+<div class="mobile-menu is-open">
+    <nav class="nav-menu-mobile">
+      <ul class="nav-list-mobile">
+        <li class="nav-list-item-mobile">
+          <a href="#about-me">About me</a>
+        </li>
+        <li class="nav-list-item-mobile">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="nav-list-item-mobile">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="nav-list-item-mobile">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
   <section class="hero-section">
 <div class="hero-container container">
   <div class="hero-title-container">
@@ -68,28 +96,28 @@
       <li class="social-media-item">
         <a href="https://github.com/sugakillers" class="social-media-link">
           <svg class="social-media-list-icon" width="32" height="32">
-            <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-github"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-github"></use>
           </svg>
         </a>
       </li>
       <li class="social-media-item">
         <a href="https://www.linkedin.com/in/kamila-goncharenko" class="social-media-link">
           <svg class="social-media-list-icon" width="32" height="32">
-            <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-linkedin"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-linkedin"></use>
           </svg>
         </a>
       </li>
       <li class="social-media-item">
         <a href="mailto:kaamyxs@gmail.com" class="social-media-link">
           <svg class="social-media-list-icon" width="32" height="32">
-            <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-mail"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-mail"></use>
           </svg>
         </a>
       </li>
       <li class="social-media-item">
         <a href="tel:+34634672022" class="social-media-link">
           <svg class="social-media-list-icon" width="32" height="32">
-            <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-tel"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-tel"></use>
           </svg>
         </a>
       </li>
@@ -167,6 +195,23 @@
     </ul>
   </div>
 </section>
+  <!-- <section class="swiper-section">
+  <div class="swiper mySwiper swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide tech_list ">HTML/CSS</div>
+      <div class="swiper-slide tech_list ">JavaScript</div>
+      <div class="swiper-slide tech_list ">React</div>
+      <div class="swiper-slide tech_list ">Node.js</div>
+      <div class="swiper-slide tech_list ">React Native</div>
+      <div class="swiper-slide tech_list ">Soft skills</div>
+    </div>
+    <button id="swiper-next-btn" class="swiper-button">
+      <svg class="swipper-button" width="40" height="40" stroke="none">
+        <use href="./img/icons.svg#icon-swiper"></use>
+      </svg>
+    </button>
+  </div>
+</section> -->
   <section id="projects" class="project-section section">
   <div class="project-container container">
     <h2 class="project-header">Projects</h2>
@@ -185,7 +230,7 @@
             srcset="./img/project/portfolio-mobile 1x, /project-curriculum/assets/portfolio-mobile@2x-4oQqbKu0.jpg 2x"
             media="(max-width: 767px)"
           />
-          <img class="project-img" src="/project-curriculum/assets/portfolio-desk-Dwq8OMBt.jpg" alt="My photo" />
+          <img class="project-img" src="../img/project/portfolio-desk.jpg" alt="My photo" />
         </picture>
         <div class="project-text-container">
         <div class="project-text">
@@ -196,7 +241,7 @@
         <a class="project-link" href="https://hanna-bondarenko.github.io/Portfolio-project-06/" target="_blank" rel="noopener noreferrer">
           <span class="project-link-text">Visit</span>
           <svg class="project-link-icon" width="24" height="24">
-            <use href="../img/icons.svg#icon-project-button"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-project-button"></use>
           </svg>
         </a>
         </div>
@@ -227,7 +272,7 @@
         <a class="project-link" href="https://natvladyslav.github.io/project-UkrainianClothes/" target="_blank" rel="noopener noreferrer">
           <span class="project-link-text">Visit</span>
           <svg class="project-link-icon" width="24" height="24">
-            <use href="/project-curriculum/assets/icons-DVMYpc6F.svg#icon-project-button"></use>
+            <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-project-button"></use>
           </svg>
         </a>
         </div>
@@ -273,14 +318,25 @@
   </div>
 </section>
 
-<!-- <div class="footer-modal-container">
+<div class="footer-backdrop">
+<div class="footer-modal">
   <button type="button" class="modal-button">
-    <svg class="modal-close-img-wt" width="24" height="24">
-      <use href="../img/icons.svg#icon-modal-button"></use>
+    <svg class="modal-img" width="24" height="24" stroke="#D00084">
+      <use href="/project-curriculum/assets/icons-DrLvtf1b.svg#icon-modal-button"></use>
     </svg>
   </button>
-  <h3>Thank you for contact me!</h3>
-</div> -->
+  <h3 class="modal-text">Thank you for contact me!</h3>
+</div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500, // тривалість анімації в мілісекундах
+      once: false,
+      mirror: true, // анімація відбувається один раз (при першому скролі)
+    });
+  </script>
 </main>
 </body>
 </html>
