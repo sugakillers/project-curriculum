@@ -11,6 +11,7 @@ const backdrop = document.querySelector(".footer-backdrop");
 const modalWindow = document.querySelector(".footer-modal");
 const modalCloseBtn = document.querySelector(".modal-button");
 
+// Validación del email
 formEmail.addEventListener('input', function () {
   const email = formEmail.value.trim();
   if (emailPattern.test(email)) {
@@ -28,13 +29,15 @@ formEmail.addEventListener('input', function () {
 
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+// Limita el texto del comentario a 100 caracteres
 formComment.addEventListener('blur', function () {
-  const maxLength = 30;
+  const maxLength = 100;
   if (formComment.value.length > maxLength) {
     formComment.value = formComment.value.substring(0, maxLength) + '...';
   }
 });
-//  =================== LocalStorage ==============
+
+// Guarda datos en LocalStorage
 formComment.addEventListener('input', function () {
   localStorage.setItem('comments', formComment.value);
 });
@@ -42,6 +45,7 @@ formEmail.addEventListener('input', function () {
   localStorage.setItem('email', formEmail.value);
 });
 
+// Recupera datos guardados al recargar la página
 document.addEventListener('DOMContentLoaded', function () {
   const savedComments = localStorage.getItem('comments');
   const savedEmail = localStorage.getItem('email');
@@ -53,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
+// Abre modal
 function openModal() {
     document.body.classList.add('no-scroll');
     backdrop.classList.add("is-open");
@@ -72,6 +76,7 @@ function openModal() {
   form.reset();
 }
 
+ // Cierra modal
 function closeModal() {
     document.body.classList.remove('no-scroll');
     backdrop.classList.remove("is-open");
@@ -83,6 +88,8 @@ function closeModal() {
       }
     });
   }
+
+  // Envío del formulario
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
   const emailValue = formEmail.value.trim();
@@ -100,6 +107,7 @@ form.addEventListener('submit', async function (event) {
         },
       }
     );
+    // Limpia formulario y abre modal
     formEmail.classList.remove('success');
     successMessage.style.display = 'none';
       openModal();
