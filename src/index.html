@@ -6,6 +6,10 @@
   <title>Curriculum Kamila Goncharenko</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   <link rel="icon" type="image/svg+xml" href="/img/icons.svg" />
 </head>
 <body>
@@ -15,8 +19,19 @@
   <load src="./partials/social-media.html" />
   <load src="./partials/about-me.html" />
   <load src="./partials/accordion.html" />
+  <!-- <load src="./partials/swiper.html" /> -->
   <load src="./partials/project.html" />
   <load src="./partials/footer.html" />
+
+  <script type="module" src="./main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500, // тривалість анімації в мілісекундах
+      once: false,
+      mirror: true, // анімація відбувається один раз (при першому скролі)
+    });
+  </script>
 </main>
 </body>
 </html>

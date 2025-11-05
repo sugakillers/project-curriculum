@@ -153,6 +153,15 @@ margin-bottom: 10px;
 .accordion-button:hover::after {
   background-color: #FFF4FB;
 }
+.accordion-panel {
+  display: none;
+}
+
+
+.accordion-item.is-active .accordion-panel {
+  display: block;
+}
+
 
 @media screen and (min-width: 768px) {
   .accordion-container {

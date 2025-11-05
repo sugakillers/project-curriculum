@@ -40,11 +40,15 @@
 <path d="M4.75 19.25L19.25 4.75M19.25 4.75H5.75M19.25 4.75V18.25" stroke="#D00084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
-<symbol id="icon-modal-button" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 6L6 18" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6 6L18 18" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<symbol id="icon-modal-button" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="#D00084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="#D00084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
+<symbol id="icon-menu-button" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 8L8 24" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 8L24 24" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 </defs>
 </svg>
