@@ -22,6 +22,7 @@ padding: 0;
   gap: 16px;
 }
 .accordion-container {
+  width: 100%;
   display: flex;
   justify-content: right;
   justify-content: center;
@@ -179,11 +180,13 @@ margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1280px) {
+
   .accordion-container {
+    width: 1248px;
     margin-top: 96px;
     gap: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
     width: 100%;
     max-width: 1248px;
 
